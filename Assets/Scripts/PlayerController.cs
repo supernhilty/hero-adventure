@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpSpeed = 25f;
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] Vector2 deadkick = new Vector2(20f, 20f);
-    Vector2 moveInput;
+	SpriteRenderer spriteRenderer;
+	Vector2 moveInput;
     Rigidbody2D rb2d;
     Animator animator;
     CapsuleCollider2D capsuleCollider2D;
@@ -18,7 +19,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+		spriteRenderer = GetComponent<SpriteRenderer>();
+		animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         gravityScaleAtStart = rb2d.gravityScale;
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
         if (!isAlive)
             return;
         Run();
+        Attack();
         FlipSprite();
         //ClimbLadder();
         Die();
@@ -75,12 +78,13 @@ public class PlayerController : MonoBehaviour
 
     void Run()
     {
-        Vector2 playerVectocity = new Vector2(moveInput.x * runSpeed, rb2d.velocity.y);
-        rb2d.velocity = playerVectocity;
-        bool playerHasHorizontalSpeed = Mathf.Abs(rb2d.velocity.x) > Mathf.Epsilon;
-        animator.SetBool("isRunning", playerHasHorizontalSpeed);
+		Vector2 playerVectocity = new Vector2(moveInput.x * runSpeed, rb2d.velocity.y);
+		rb2d.velocity = playerVectocity;
+		bool playerHasHorizontalSpeed = Mathf.Abs(rb2d.velocity.x) > Mathf.Epsilon;
+		animator.SetBool("isRunning", playerHasHorizontalSpeed);
+		animator.SetBool("isIdle", !playerHasHorizontalSpeed);
 
-    }
+	}
 
     void OnMove(InputValue value)
     {
@@ -96,15 +100,26 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("attack");
     }
 
-    //void OnJump(InputValue value)
-    //{
-    //    if (!isAlive)
-    //        return;
-    //    if (!capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
-    //        return;
-    //    if (value.isPressed)
-    //    {
-    //        rb2d.velocity += new Vector2(0f, jumpSpeed);
-    //    }
-    //}
+	void Attack()
+	{
+		if (Input.GetKey(KeyCode.Space))
+		{
+			animator.SetTrigger("attack");
+		}
+		else
+		{
+			animator.ResetTrigger("attack");
+		}
+	}
+	//void OnJump(InputValue value)
+	//{
+	//    if (!isAlive)
+	//        return;
+	//    if (!capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
+	//        return;
+	//    if (value.isPressed)
+	//    {
+	//        rb2d.velocity += new Vector2(0f, jumpSpeed);
+	//    }
+	//}
 }

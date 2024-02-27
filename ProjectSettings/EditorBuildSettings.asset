@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuScene.unity
+    path: Assets/Free Asset - 2D Handcrafted Art/MenuScene.unity
     guid: b474021e12277164b9e70dbaa064346e
   - enabled: 1
     path: Assets/Free Asset - 2D Handcrafted Art/DemoScene.unity
