@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameplayScene.unity
     guid: 9f9c68c63e840cf4e99d0bb467ffde80
+  - enabled: 1
+    path: Assets/Free Asset - 2D Handcrafted Art/DemoScene.unity
+    guid: d30fbee988f498842a6e22beea9f1786
   m_configObjects: {}

@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpSpeed = 25f;
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] Vector2 deadkick = new Vector2(20f, 20f);
+    SpriteRenderer spriteRenderer;
     Vector2 moveInput;
     Rigidbody2D rb2d;
     Animator animator;
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
         if (!isAlive)
             return;
         Run();
+        Attack();
         FlipSprite();
         //ClimbLadder();
         Die();
@@ -68,9 +71,20 @@ public class PlayerController : MonoBehaviour
 
     private void FlipSprite()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(rb2d.velocity.x) > Mathf.Epsilon;
-        if (playerHasHorizontalSpeed)
-            transform.localScale = new Vector2(Mathf.Sign(rb2d.velocity.x), 1f);
+        float moveInputValue = Input.GetAxis("Horizontal");
+
+        if(moveInputValue < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        if(moveInputValue > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        //bool playerHasHorizontalSpeed = Mathf.Abs(rb2d.velocity.x) > Mathf.Epsilon;
+        //if (playerHasHorizontalSpeed)
+        //    transform.localScale = new Vector2(Mathf.Sign(rb2d.velocity.x), 1f);
     }
 
     void Run()
@@ -79,7 +93,7 @@ public class PlayerController : MonoBehaviour
         rb2d.velocity = playerVectocity;
         bool playerHasHorizontalSpeed = Mathf.Abs(rb2d.velocity.x) > Mathf.Epsilon;
         animator.SetBool("isRunning", playerHasHorizontalSpeed);
-
+        animator.SetBool("isIdle", !playerHasHorizontalSpeed);
     }
 
     void OnMove(InputValue value)
@@ -96,6 +110,17 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("attack");
     }
 
+    void Attack()
+    {
+        if(Input.GetKey(KeyCode.J))
+        {
+            animator.SetTrigger("attack");
+        }
+        else
+        {
+            animator.ResetTrigger("attack");
+        }
+    }
     //void OnJump(InputValue value)
     //{
     //    if (!isAlive)
