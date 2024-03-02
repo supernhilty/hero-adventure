@@ -4621,7 +4621,11 @@ Transform:
   m_GameObject: {fileID: 510236660}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -20.500423, y: 5.1319637, z: -26.951065}
+=======
+  m_LocalPosition: {x: -20.569023, y: 6.066064, z: -26.951065}
+>>>>>>> e7d26ade62a43be115c3582d04b66cc64fdca16d
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6419,6 +6423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 598877405787227055, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_Size.x
+<<<<<<< HEAD
       value: 0.22794808
       objectReference: {fileID: 0}
     - target: {fileID: 598877405787227055, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
@@ -6440,12 +6445,28 @@ PrefabInstance:
     - target: {fileID: 598877405787227055, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_Direction
       value: 0
+=======
+      value: 1.2526245
+      objectReference: {fileID: 0}
+    - target: {fileID: 598877405787227055, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
+      propertyPath: m_Size.y
+      value: 2.018898
+      objectReference: {fileID: 0}
+    - target: {fileID: 598877405787227055, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.47188377
+      objectReference: {fileID: 0}
+    - target: {fileID: 598877405787227055, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.22226691
+>>>>>>> e7d26ade62a43be115c3582d04b66cc64fdca16d
       objectReference: {fileID: 0}
     - target: {fileID: 3479209785078426677, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
+<<<<<<< HEAD
       propertyPath: m_LocalScale.x
       value: 2.3733256
       objectReference: {fileID: 0}
@@ -6460,6 +6481,14 @@ PrefabInstance:
     - target: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.4659
+=======
+      propertyPath: m_LocalPosition.x
+      value: -22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4
+>>>>>>> e7d26ade62a43be115c3582d04b66cc64fdca16d
       objectReference: {fileID: 0}
     - target: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6497,6 +6526,7 @@ PrefabInstance:
       propertyPath: runSpeed
       value: 3
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 6136470689505253098, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_DefaultControlScheme
       value: Keyboard&Mouse
@@ -6509,6 +6539,8 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+=======
+>>>>>>> e7d26ade62a43be115c3582d04b66cc64fdca16d
     - target: {fileID: 8681225019522424369, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_GravityScale
       value: 1
@@ -6517,8 +6549,12 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     m_RemovedComponents:
     - {fileID: 5836958394050783548, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
+=======
+    m_RemovedComponents: []
+>>>>>>> e7d26ade62a43be115c3582d04b66cc64fdca16d
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
@@ -6528,9 +6564,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3479209785078426677, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1130933966}
+<<<<<<< HEAD
     - targetCorrespondingSourceObject: {fileID: 3479209785078426677, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1130933973}
+=======
+>>>>>>> e7d26ade62a43be115c3582d04b66cc64fdca16d
   m_SourcePrefab: {fileID: 100100000, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
 --- !u!1 &709327401
 GameObject:
@@ -8773,7 +8812,11 @@ Transform:
   m_GameObject: {fileID: 1098737686}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -20.500423, y: 5.1319637, z: -26.951065}
+=======
+  m_LocalPosition: {x: -20.569023, y: 6.066064, z: -26.951065}
+>>>>>>> e7d26ade62a43be115c3582d04b66cc64fdca16d
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9049,7 +9092,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130933958}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -9074,35 +9117,19 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09191662, y: 0}
+  m_Offset: {x: -0.45206833, y: -1.07}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.9444445, y: 0, z: 1.7222222, w: 0.5}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.69, y: 0.44}
+    oldSize: {x: 3.8333333, y: 2.4444444}
     newSize: {x: 0.69, y: 0.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36610365, y: 0.44}
+  m_Size: {x: 1.3925819, y: 0.28857923}
   m_EdgeRadius: 0
---- !u!114 &1130933973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130933958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6460fefb463e1c14c93c0d9b3342c905, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runSpeed: 10
-  jumpSpeed: 25
-  climbSpeed: 5
-  deadkick: {x: 20, y: 20}
 --- !u!4 &1152972096 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4756378424269788, guid: f8d68b077782545439effc638eac1db5, type: 3}
