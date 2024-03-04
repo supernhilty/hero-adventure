@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5836958394050783548}
   - component: {fileID: 4893680874383622018}
   - component: {fileID: 598877405787227055}
+  - component: {fileID: 4120986011409886933}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -78,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1459458051413904079, guid: 3accdbde4e56f5c4e9cfa311b8cef55f, type: 3}
+  m_Sprite: {fileID: -1880328410, guid: 3accdbde4e56f5c4e9cfa311b8cef55f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.69, y: 0.44}
+  m_Size: {x: 4.3125, y: 2.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -115,7 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6136470689505253098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,11 +220,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3479209785078426677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc15d22f206811f4c86a63da952ca35e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6460fefb463e1c14c93c0d9b3342c905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
-  jumpSpeed: 25
+  airRunSpeed: 2
+  jumpSpeed: 10
   climbSpeed: 5
   deadkick: {x: 20, y: 20}
 --- !u!95 &4893680874383622018
@@ -282,3 +284,33 @@ CapsuleCollider2D:
   m_Offset: {x: -0.9727783, y: -0.6365518}
   m_Size: {x: 2.3992004, y: 4.6451035}
   m_Direction: 0
+--- !u!114 &4120986011409886933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3479209785078426677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f10d87fceb52f4a9f8159b367b476b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contactFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  groundDistance: 0.05
+  _isGround: 0
+  _isOnWall: 0
+  _isOnCeiling: 0

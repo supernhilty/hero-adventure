@@ -851,15 +851,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 505998675804846028, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 505998675804846028, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
-      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 505998675804846028, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 505998675804846028, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_SortingLayerID
-      value: 1941310005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3479209785078426677, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_Name
