@@ -7,15 +7,9 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Free Asset - 2D Handcrafted Art/MenuScene.unity
-    guid: b474021e12277164b9e70dbaa064346e
+    guid: 19fc02e00f0bebe49adcaca2c1c73612
   - enabled: 1
     path: Assets/Free Asset - 2D Handcrafted Art/DemoScene.unity
     guid: d30fbee988f498842a6e22beea9f1786
-  - enabled: 1
-    path: Assets/Scenes/GameplayScene.unity
-    guid: 9f9c68c63e840cf4e99d0bb467ffde80
-  - enabled: 1
-    path: Assets/Scenes/SettingScene.unity
-    guid: 086638ec49f905a41b5520e26372acd6
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2940f1d6e3a7d4d4ea02eeb78070d472, type: 2}

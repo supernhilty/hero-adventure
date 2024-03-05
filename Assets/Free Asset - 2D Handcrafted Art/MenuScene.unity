@@ -545,7 +545,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "W: Up \t\t\t\tS: Crouch\n\nA: Left\t\t\t\tD: Right\n\nSpace: Attack\n\nAware
+  m_text: "A: Left\t\t\t\tD: Right\n\nSpace: Up\t\t\t       F: Fire Arrow\n\nAware
     your health bar, enemies around you!\n\nKill enemy to level up"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -718,8 +718,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1134,8 +1134,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hero Adventure
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1400,7 +1400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee7c1b2c9298aaa44a97f0151fd5d42e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb5d0013645bfd04c9d3f6d1c1eee52f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1576,7 +1576,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1199357055}
         m_TargetAssemblyTypeName: MainMenuScript, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1685,8 +1685,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: How To Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1199357053}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb86ce9b785eaf34ab934cfed634f6a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ef79166b8e3d8d4fb5a3f819a1aee04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1236246077
@@ -2361,8 +2361,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Setting
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3006,8 +3006,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8d5f127606cb63a4dbf643e749235399, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
