@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
         //    transform.localScale = new Vector2(Mathf.Sign(rb2d.velocity.x), 1f);
     }
 
-    void Run()
+    public void Run()
     {
         Vector2 playerVectocity;
         if (CanMove)
@@ -125,10 +125,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnMove(InputValue value)
+    public void OnMove(InputValue value)
     {
         if (!isAlive)
             return;
+
         moveInput = value.Get<Vector2>();
         if (!touchingDirections.IsOnWall)
         {
@@ -141,7 +142,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnAttack(InputValue value)
+    public void OnAttack(InputValue value)
     {
         if (!isAlive)
             return;
@@ -171,7 +172,7 @@ public class PlayerController : MonoBehaviour
 	//    }
 	//}
 
-    void OnJump(InputValue value)
+    public void OnJump(InputValue value)
     {
         if (!isAlive)
             return;
