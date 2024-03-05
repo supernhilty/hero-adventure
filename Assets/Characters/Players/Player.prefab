@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8681225019522424369}
   - component: {fileID: 6136470689505253098}
   - component: {fileID: 5836958394050783548}
-  - component: {fileID: 4893680874383622018}
   - component: {fileID: 598877405787227055}
   - component: {fileID: 4120986011409886933}
+  - component: {fileID: 3358783227918549824}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -228,27 +228,6 @@ MonoBehaviour:
   jumpSpeed: 10
   climbSpeed: 5
   deadkick: {x: 20, y: 20}
---- !u!95 &4893680874383622018
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3479209785078426677}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 312496b25d842af4a938e96c7d5aaee0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &598877405787227055
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -314,3 +293,24 @@ MonoBehaviour:
   _isGround: 0
   _isOnWall: 0
   _isOnCeiling: 0
+--- !u!95 &3358783227918549824
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3479209785078426677}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 312496b25d842af4a938e96c7d5aaee0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
