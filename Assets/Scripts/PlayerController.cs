@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb2d;
     Animator animator;
     CapsuleCollider2D capsuleCollider2D;
-    SpriteRenderer spriteRenderer;
     float gravityScaleAtStart;
     bool isAlive = true;
     TouchingDirections touchingDirections;
@@ -31,7 +30,6 @@ public class PlayerController : MonoBehaviour
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         gravityScaleAtStart = rb2d.gravityScale;
         touchingDirections = GetComponent<TouchingDirections>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -40,6 +38,7 @@ public class PlayerController : MonoBehaviour
         if (!isAlive)
             return;
         Run();
+
         FlipSprite();
         //ClimbLadder();
         Die();
@@ -82,23 +81,12 @@ public class PlayerController : MonoBehaviour
 
     private void FlipSprite()
     {
-        float moveInputValue = Input.GetAxis("Horizontal");
-
-        if(moveInputValue < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        if(moveInputValue > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
-
-        //bool playerHasHorizontalSpeed = Mathf.Abs(rb2d.velocity.x) > Mathf.Epsilon;
-        //if (playerHasHorizontalSpeed)
-        //    transform.localScale = new Vector2(Mathf.Sign(rb2d.velocity.x), 1f);
+        bool playerHasHorizontalSpeed = Mathf.Abs(rb2d.velocity.x) > Mathf.Epsilon;
+        if (playerHasHorizontalSpeed)
+            transform.localScale = new Vector2(Mathf.Sign(rb2d.velocity.x), 1f);
     }
 
-    public void Run()
+    void Run()
     {
         Vector2 playerVectocity;
         if (CanMove)
@@ -125,12 +113,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void OnMove(InputValue value)
+    void OnMove(InputValue value)
     {
         if (!isAlive)
             return;
-
-        moveInput = value.Get<Vector2>();
         if (!touchingDirections.IsOnWall)
         {
             moveInput = value.Get<Vector2>();
@@ -142,37 +128,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void OnAttack(InputValue value)
+    void OnAttack(InputValue value)
     {
         if (!isAlive)
             return;
-        animator.SetTrigger("attack");
+        animator.SetTrigger(AnimationStrings.attack);
     }
 
-	void Attack()
-	{
-		if (Input.GetKey(KeyCode.Space))
-		{
-			animator.SetTrigger("attack");
-		}
-		else
-		{
-			animator.ResetTrigger("attack");
-		}
-	}
-	//void OnJump(InputValue value)
-	//{
-	//    if (!isAlive)
-	//        return;
-	//    if (!capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
-	//        return;
-	//    if (value.isPressed)
-	//    {
-	//        rb2d.velocity += new Vector2(0f, jumpSpeed);
-	//    }
-	//}
-
-    public void OnJump(InputValue value)
+    void OnJump(InputValue value)
     {
         if (!isAlive)
             return;
@@ -182,7 +145,6 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger(AnimationStrings.jump);
 
             rb2d.velocity += new Vector2(rb2d.velocity.x, jumpSpeed);
-
         }
     }
 }
