@@ -545,7 +545,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "W: Up \t\t\t\tS: Crouch\n\nA: Left\t\t\t\tD: Right\n\nSpace: Attack\n\nAware
+  m_text: "A: Left\t\t\t\tD: Right\n\nSpace: Up\t\t\t       F: Fire Arrow\n\nAware
     your health bar, enemies around you!\n\nKill enemy to level up"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
