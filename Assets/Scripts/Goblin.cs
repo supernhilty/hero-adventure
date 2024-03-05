@@ -37,11 +37,18 @@ public class Goblin : MonoBehaviour
         }
     }
     public bool _hasTarget = false;
+    public float walkStopRate = 0.05f;
+
     public bool HasTarget { get { return _hasTarget; }
         private set { 
             _hasTarget = value;
             animator.SetBool(AnimationStrings.hasTarget, value);
         } }
+
+    public bool CanMove { get { 
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+        } 
 
     private void Awake()
     {
@@ -56,9 +63,16 @@ public class Goblin : MonoBehaviour
             FlipDirection();
         }
        
-        rb.velocity = new Vector2(walkSpeed*walkDirectionVector.x, rb.velocity.y);
+        if(CanMove)
+        {
+            rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
+        }
     }
-
+     
     private void FlipDirection()
     {
         if(WalkDirection == WalkableDirection.Left)

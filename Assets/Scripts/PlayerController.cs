@@ -49,6 +49,13 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public bool IsAlive
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.isAlive);
+        }
+    }
     void Die()
     {
         if (capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemies")))
