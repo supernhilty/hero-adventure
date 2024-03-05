@@ -385,7 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 15894718}
   - component: {fileID: 15894719}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 67484416}
   - component: {fileID: 67484417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2814,7 +2814,7 @@ GameObject:
   - component: {fileID: 266161207}
   - component: {fileID: 266161208}
   - component: {fileID: 266161209}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point lightYell (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3519,7 +3519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383092913}
   - component: {fileID: 383092914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FlLit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3687,7 +3687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 403790456}
   - component: {fileID: 403790457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3944,7 +3944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425285153}
   - component: {fileID: 425285154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4280,7 +4280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 464702927}
   - component: {fileID: 464702928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4621,7 +4621,7 @@ Transform:
   m_GameObject: {fileID: 510236660}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.86547, y: 5.659699, z: -26.951065}
+  m_LocalPosition: {x: -20.457666, y: 3.0296988, z: -28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4909,6 +4909,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &516091410 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6663527834597115174, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+  m_PrefabInstance: {fileID: 1845997441}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1675a109cd3262d46be897d0cad263dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &540305390
 GameObject:
   m_ObjectHideFlags: 0
@@ -5648,7 +5659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 583897809}
   - component: {fileID: 583897810}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5771,7 +5782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 604777401}
   - component: {fileID: 604777402}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6279,7 +6290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 659150814}
   - component: {fileID: 659150815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrLit (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6415,7 +6426,7 @@ PrefabInstance:
       objectReference: {fileID: -3318188226485093758, guid: ae72133dacba6ec4eb33ecde48f50e56, type: 3}
     - target: {fileID: 505998675804846028, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 598877405787227055, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_Size.x
@@ -6437,17 +6448,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3479209785078426677, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.5
+      value: -22.23
       objectReference: {fileID: 0}
     - target: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0489354
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5245022557088686543, guid: d61c99f8c13b6334fa01f7b35a6914e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7357,7 +7372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 846534782}
   - component: {fileID: 846534783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7832,7 +7847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 956151145}
   - component: {fileID: 956151146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8764,7 +8779,7 @@ Transform:
   m_GameObject: {fileID: 1098737686}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.86547, y: 5.659699, z: -26.951065}
+  m_LocalPosition: {x: -20.457666, y: 3.0296988, z: -28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9092,14 +9107,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contactFilter:
     useTriggers: 0
-    useLayerMask: 0
+    useLayerMask: 1
     useDepth: 0
     useOutsideDepth: 0
     useNormalAngle: 0
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 64
     minDepth: 0
     maxDepth: 0
     minNormalAngle: 0
@@ -9848,7 +9863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1219469570}
   - component: {fileID: 1219469571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10442,7 +10457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284243433}
   - component: {fileID: 1284243434}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10910,7 +10925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1333368869}
   - component: {fileID: 1333368870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10994,7 +11009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1341614030}
   - component: {fileID: 1341614031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11292,7 +11307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1381139577}
   - component: {fileID: 1381139578}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrLit (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11590,7 +11605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1407995222}
   - component: {fileID: 1407995223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18134,7 +18149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585430816}
   - component: {fileID: 1585430817}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite3_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18324,7 +18339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1587969098}
   - component: {fileID: 1587969099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18408,7 +18423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1591161444}
   - component: {fileID: 1591161445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19429,7 +19444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685956181}
   - component: {fileID: 1685956182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrLit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20028,7 +20043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764547075}
   - component: {fileID: 1764547076}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20480,7 +20495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1796507025}
   - component: {fileID: 1796507026}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20942,7 +20957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1810116542}
   - component: {fileID: 1810116543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moss1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21363,6 +21378,91 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1845997441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 214451559628011980, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318604693960832826, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: detectionZone
+      value: 
+      objectReference: {fileID: 516091410}
+    - target: {fileID: 1657623947352383804, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_Name
+      value: 'Goblin '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673742722817706749, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0580934
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673742722817706749, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673742722817706749, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.36434692
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5323384
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383965248337018591, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571299954618798931, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d51ed4fa3d661de4793060cf6eb1771e, type: 3}
 --- !u!1 &1847751143
 GameObject:
   m_ObjectHideFlags: 0
@@ -21373,7 +21473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1847751144}
   - component: {fileID: 1847751145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22286,7 +22386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1905233061}
   - component: {fileID: 1905233062}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22538,7 +22638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913407065}
   - component: {fileID: 1913407066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite3_21 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23305,7 +23405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1937814792}
   - component: {fileID: 1937814793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gr3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24462,7 +24562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2042139726}
   - component: {fileID: 2042139727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrLit (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25253,4 +25353,5 @@ SceneRoots:
   - {fileID: 1243796718}
   - {fileID: 239846421}
   - {fileID: 674385671}
+  - {fileID: 1845997441}
   - {fileID: 1098737688}
